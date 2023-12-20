@@ -1,8 +1,7 @@
-#include "header_saft3.h"
+#include "header_saft1.h" //carregamento da matriz de dados para as resoluções de baixa, media, alta resolução.
 #include <Arduino.h>
-//#include <stdint.h>
 
-// Função para exportar matriz
+
 
 void setup() {
   Serial.begin(115200);
@@ -31,14 +30,14 @@ void setup() {
 
       V[z1][x1] = SIG;
           
-//      Serial.print(V[z1][x1], 5);
+//      Serial.print(V[z1][x1], 5); //impressão da matriz pela porta serial
 //      Serial.print(" ");
     }
 //    Serial.println(" ");
   }
   unsigned long tempoFinal = millis(); 
 
-  unsigned long tempoExecucao = tempoFinal - tempoInicio; 
+  unsigned long tempoExecucao = tempoFinal - tempoInicio; //calculo de tempo de processamento.
 
   Serial.print("Tempo de execucao: ");
   Serial.print(tempoExecucao);
