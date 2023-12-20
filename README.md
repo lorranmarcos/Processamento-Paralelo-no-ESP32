@@ -16,4 +16,4 @@ Instruções de Uso.
 Os arquivos do tipo "header_saft.h" deverão estar na pasta do projeto juntamente com a sua extenção ".ino". 
 Após o carregamento do algoritmo no ESP a matriz resultante para a formação da imagem ultrassonica poderá ser coletada diretamente na serial do ESP, utilizando o software PUTTY
 para aquisição e arquivamento dos dados da serial em arquivo ".txt".
-Para formação da imagem ultrassonica necessário a utilização do software MATLAB ou similares para representação da imagem processada no ESP32
+Para formação da imagem ultrassonica necessário a utilização do software MATLAB ou similares para representação da imagem processada no ESP32.
