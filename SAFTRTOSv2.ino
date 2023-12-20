@@ -1,11 +1,13 @@
-#include "header_saft3.h"
+#include "header_saft3.h" //carregamento da matriz de dados para as resoluções de baixa, media, alta resolução.
 #include "esp_task_wdt.h"
 #include <Arduino.h>
+
 
 float V[Nz][Nx] = {0};
 SemaphoreHandle_t semaforoV;
 int tasksCompleted = 0;
 
+//Definição da tarefa que será alocada dinamicamente pelo FreeRTOS
 void processamentoTask(void* parameter) {
   int z1 = (int)parameter;
   float SIG, Te, Kr, Tr;
@@ -57,7 +59,7 @@ void setup() {
     xTaskCreate(processamentoTask, "processamentoTask", 1024, (void*)i, 1, NULL);
   }
   unsigned long tempoFinal = millis();
-  unsigned long tempoExecucao = tempoFinal - tempoInicio;
+  unsigned long tempoExecucao = tempoFinal - tempoInicio; //calculo de tempo de processamento.
     Serial.print("Tempo de execucao: ");
     Serial.print(tempoExecucao);
     Serial.println(" ms");
