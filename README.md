@@ -3,8 +3,10 @@ Programação paralela no ESP32 utilizando Arduino-IDE.
 Este repositório contém códigos desenvolvidos como parte do Trabalho de Conclusão de Curso (TCC), abordando técnicas de Focalização por Abertura Sintética (SAFT). Esses códigos são implementações práticas das técnicas e algoritmos discutidos e explorados no meu trabalho.
 
 Conteúdo do Repositório
-Estrutura dos Arquivos
-[SAFT01.ino]: código de processamento sequencial de imagens ultrassonicas, utilizando apenas um núcleo da plataforma ESP32 desenvolvido em C++.
+Estrutura dos Arquivos:\n
+
+[SAFT01.ino]: código de processamento sequencial de imagens ultrassonicas, utilizando apenas um núcleo da plataforma ESP32 desenvolvido em C++.\n
+
 [SAFTparalelizado.ino]: código de processamento paralelizado com préfixação de tarefas em cada um dos dois núcleos do ESP32.
 [SAFTRTOS.ino]: código de processamento paralelizado com alocação dinamica das tarefas pelo FreeRTOS da plataforma ESP32.
 [header_saft1.h]: matriz de dados para processamento da imagens ultrassonica pelo algoritmo saft com baixa resolução.
