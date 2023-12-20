@@ -1,5 +1,5 @@
 # Processamento-Paralelo-no-ESP32
-Programação paralela no ESP32 utilizando Arduino-IDE
+Programação paralela no ESP32 utilizando Arduino-IDE.
 Este repositório contém códigos desenvolvidos como parte do Trabalho de Conclusão de Curso (TCC), abordando técnicas de Focalização por Abertura Sintética (SAFT). Esses códigos são implementações práticas das técnicas e algoritmos discutidos e explorados no meu trabalho.
 
 Conteúdo do Repositório
