@@ -1,4 +1,4 @@
-#include "header_saft3.h"
+#include "header_saft3.h" //carregamento da matriz de dados para as resoluções de baixa, media, alta resolução.
 #include <Arduino.h>
 //#include <FreeRTOS.h>
 
@@ -92,8 +92,7 @@ void setup() {
   }
   unsigned long tempoFinal = millis();
 
-  unsigned long tempoExecucao = tempoFinal - tempoInicio;
-
+  unsigned long tempoExecucao = tempoFinal - tempoInicio;//calculo de tempo de processamento.
     Serial.print("Tempo de execucao: ");
     Serial.print(tempoExecucao);
     Serial.println(" ms");
